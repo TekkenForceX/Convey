@@ -3,15 +3,49 @@
   <head>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|PT+Sans+Narrow&display=swap" rel="stylesheet">
     <title>title</title>
   </head>
   <body>
 
+<ul>
+    <li><a class="active" href="">Home</a></li>
+    <li><a href="">Information</a></li>
+    <li><a href="#contact">N/A</a></li>
+    <li><a href="#about">Donation</a></li>
+</ul>
+
+    <div id= "PtSansNarrow">
+    <p>Hi, there.<br>
+    If you would like, you can donate to keep this program going.
+    You must enter your card information or go to one of our locations and get an envelope for sending in checks and or cash.
+    Entering your name, reason for donating, and setting a date of donation are optional.
+    If you do not set a date for when you would like to donate money you will be charged the day of the made donation.</p>
+    </div>
+
     <h1>Donate Here</h1>
-    <p>Why are you donating?</p>
+<div id= "PtSansNarrow">
+    <form action="/action_page.php">
+    First name: <input type="text" name="FirstName" value="Jeremiah"><br>
+    Last name: <input type="text" name="LastName" value="Carter"><br>
+    </form>
+
+
+
+    <label for="story">Why are you donating?</label> <br>
+
+    <textarea id="story" name="story"
+          rows="5" cols="70">
+    </textarea> <br>
+
     <p>When would you like to donate?</p>
 
+
+<form action="/action_page.php">
+<input type="date" name="bday">
+  <input type="submit">
+</form>
+</div>
 
 
 
